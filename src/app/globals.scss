@@ -1,0 +1,37 @@
+@import "../styles/themes/grifinoria.scss";
+@import "../styles/themes/sonserina.scss";
+@import "../styles/themes/corvinal.scss";
+@import "../styles/themes/lufa-lufa.scss";
+
+:root {
+  --bg-color: #{$bg-color-grifinoria};
+  --color-one: #{$color-one-grifinoria};
+  --color-two: #{$color-two-grifinoria};
+  --color-three: #{$color-three-grifinoria};
+}
+
+[data-tema="sonserina"] {
+  --bg-color: #{$bg-color-sonserina};
+  --color-one: #{$color-one-sonserina};
+  --color-two: #{$color-two-sonserina};
+  --color-three: #{$color-three-sonserina};
+}
+
+[data-tema="lufa-lufa"] {
+  --bg-color: #{$bg-color-lufa-lufa};
+  --color-one: #{$color-one-lufa-lufa};
+  --color-two: #{$color-two-lufa-lufa};
+  --color-three: #{$color-three-lufa-lufa};
+}
+
+[data-tema="corvinal"] {
+  --bg-color: #{$bg-color-corvinal};
+  --color-one: #{$color-one-corvinal};
+  --color-two: #{$color-two-corvinal};
+  --color-three: #{$color-three-corvinal};
+}
+
+html,
+body {
+  background-color: var(--bg-color);
+}
