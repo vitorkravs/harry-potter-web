@@ -1,0 +1,54 @@
+#header-container {
+  width: 100%;
+  background-color: var(--color-one);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+
+  #color-option-container {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #logo-img-container {
+  }
+
+  .icon-open-menu,
+  .icon-close-menu {
+    font-size: 3rem;
+  }
+
+  .open-menu {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    left: 90%;
+    background: var(--color-three);
+    padding: 0.8rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+
+    .icon-open-menu {
+      font-size: 2.5rem;
+      color: var(--color-two);
+    }
+  }
+
+  .open-menu:hover {
+    background: var(--color-two);
+
+    .icon-open-menu {
+      color: var(--color-three);
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import "../../styles/themes/grifinoria.scss";
+@import "../../styles/themes/sonserina.scss";
+@import "../../styles/themes/corvinal.scss";
+@import "../../styles/themes/lufa-lufa.scss";
+@import "../../styles/variables.scss";
+
+.color-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    color: $color-text;
+    font-weight: 600;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    height: 47px;
+    transition: 0.5s;
+  }
+
+  button:hover {
+    background-color: var(--bg-color);
+  }
+
+  .btn-grifinoria {
+    background-color: $color-one-grifinoria;
+  }
+  .btn-sonserina {
+    background-color: $color-one-sonserina;
+  }
+  .btn-corvinal {
+    background-color: $color-one-corvinal;
+  }
+  .btn-lufa-lufa {
+    background-color: $color-one-lufa-lufa;
+  }
+}
