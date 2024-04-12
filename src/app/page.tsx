@@ -1,10 +1,13 @@
 import Header from "@/components/Header/Header";
+import Welcome from "@/components/Welcome/Welcome";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <main></main>
+      <main>
+        <Welcome />
+      </main>
     </>
   );
 }
