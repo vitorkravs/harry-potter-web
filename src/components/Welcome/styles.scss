@@ -1,0 +1,118 @@
+@import "../../styles/variables.scss";
+
+#welcome-container {
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  #bg-welcome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.08;
+    z-index: 0;
+  }
+
+  #title-welcome-container {
+    #title-welcome {
+      color: var(--color-three);
+      transition: 0.5s;
+      background-color: var(--color-two);
+      padding: 0.5rem 1rem;
+      transition: 0.5s;
+
+      h1 {
+        font-size: 2.2rem;
+        font-weight: 900;
+      }
+    }
+  }
+
+  #books-container {
+    width: 100%;
+    height: 100%;
+    color: var(--color-three);
+    transition: 0.5s;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    .swiper-slide-books {
+      height: 450px;
+
+      .swiper-button-prev::after,
+      .swiper-button-next::after {
+        color: var(--color-three);
+      }
+
+      .swiper-books-item {
+        h3 {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #welcome-container {
+    #title-welcome-container {
+      #title-welcome {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+
+    #books-container {
+      .swiper-slide-books {
+        width: 70%;
+        height: 550px;
+
+        .book-img {
+          width: 380px;
+          height: 420px;
+        }
+
+        .swiper-books-item {
+          h3 {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  #welcome-container {
+    #books-container {
+      h2 {
+        font-size: 2rem;
+      }
+      .swiper-slide-books {
+        width: 50%;
+        height: 650px;
+
+        .book-img {
+          width: 480px;
+          height: 520px;
+        }
+
+        .swiper-books-item {
+          h3 {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
