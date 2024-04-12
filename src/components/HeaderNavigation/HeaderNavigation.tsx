@@ -1,20 +1,18 @@
 "use client";
 
-import { BiSolidCameraMovie } from "react-icons/bi";
 //style
 import "./styles.scss";
 
-//hooks
-import { FaPeopleGroup } from "react-icons/fa6";
-
 //icons
-import { GiCastle, GiPotionBall, GiWhiteBook } from "react-icons/gi";
+import { GiPotionBall, GiWhiteBook } from "react-icons/gi";
 import { GrMagic } from "react-icons/gr";
+import { IoClose } from "react-icons/io5";
+import { FaPeopleGroup } from "react-icons/fa6";
+import { BiSolidCameraMovie } from "react-icons/bi";
 
 //animations
 import { motion } from "framer-motion";
 import { menuAnimation } from "@/animations/menuNavigation";
-import { IoClose } from "react-icons/io5";
 
 interface HeaderNavigationProps {
   openMenu: boolean;
