@@ -6,6 +6,7 @@
   align-items: center;
   text-align: center;
   position: relative;
+  margin-bottom: 50px;
   z-index: 5;
   transition: 0.5s;
 
@@ -15,9 +16,6 @@
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-  }
-
-  #logo-img-container {
   }
 
   .icon-open-menu,
