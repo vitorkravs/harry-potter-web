@@ -13,6 +13,7 @@ import { BiSolidCameraMovie } from "react-icons/bi";
 //animations
 import { motion } from "framer-motion";
 import { menuAnimation } from "@/animations/menuNavigation";
+import { useEffect } from "react";
 
 interface HeaderNavigationProps {
   openMenu: boolean;
@@ -20,6 +21,16 @@ interface HeaderNavigationProps {
 }
 
 const HeaderNavigation = ({ openMenu, toggleMenu }: HeaderNavigationProps) => {
+  useEffect(() => {
+    if (openMenu) {
+      // Adiciona ouvinte de evento para prevenir scroll
+      document.body.style.overflow = "hidden";
+    } else {
+      // Remove ouvinte de evento para permitir scroll
+      document.body.style.overflow = "auto";
+    }
+  }, [openMenu]);
+
   return (
     <motion.div
       initial="closed"
