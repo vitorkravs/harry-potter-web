@@ -39,6 +39,22 @@ body {
   box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--color-three);
+  transition: 0.5s;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--bg-color);
+  border-radius: 20px;
+  border: 3px solid var(--color-three);
+  transition: 0.5s;
+}
+
 li {
   list-style: none;
 }
