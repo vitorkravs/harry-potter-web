@@ -74,15 +74,21 @@ const HeaderNavigation = ({ openMenu, toggleMenu }: HeaderNavigationProps) => {
           <ul className="list-menu-container">
             <li>
               <GiWhiteBook className="icon" />
-              <a href="">Livros</a>
+              <a href="#books-container" onClick={toggleMenu}>
+                Livros
+              </a>
             </li>
             <li>
               <FaPeopleGroup className="icon" />
-              <a href="">Personagens</a>
+              <a href="#characters-container" onClick={toggleMenu}>
+                Personagens
+              </a>
             </li>
             <li>
               <BiSolidCameraMovie className="icon" />
-              <a href="">Filmes</a>
+              <a href="#movies-container" onClick={toggleMenu}>
+                Filmes
+              </a>
             </li>
             <li>
               <GiPotionBall className="icon" />
