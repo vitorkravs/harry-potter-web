@@ -50,7 +50,14 @@ const Characters = () => {
     filteredCharacters.length > 0 ? filteredCharacters[0] : null;
 
   return (
-    <section id="characters-container">
+    <section
+      id="characters-container"
+      style={{
+        backgroundImage: `url("/quadros-decorativos-harry-potter.jpg")`,
+        backgroundSize: "250px 250px",
+        backgroundPosition: "center",
+      }}
+    >
       <div className="characters-title">
         <h2>Personagens</h2>
         <p>Aqui você pode pesquisar sobre os personagens queridos de HP</p>
@@ -112,7 +119,13 @@ const Characters = () => {
             </p>
           </div>
         ) : (
-          <div>
+          <div
+            style={{
+              background: "var(--color-three)",
+              padding: ".5rem 1rem",
+              borderRadius: "1.5rem",
+            }}
+          >
             <p>Personagem não encontado :{"("}</p>
           </div>
         )}
