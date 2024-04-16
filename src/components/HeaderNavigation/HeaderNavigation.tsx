@@ -92,7 +92,9 @@ const HeaderNavigation = ({ openMenu, toggleMenu }: HeaderNavigationProps) => {
             </li>
             <li>
               <GiPotionBall className="icon" />
-              <a href="">Poções</a>
+              <a href="potions-container" onClick={toggleMenu}>
+                Poções
+              </a>
             </li>
             <li>
               <GrMagic className="icon" />
