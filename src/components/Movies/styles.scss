@@ -52,8 +52,8 @@
       .movies-content-one,
       .movies-content-two {
         width: 50%;
-        height: 400px;
         padding: 0.5rem;
+        height: 400px;
       }
     }
   }
@@ -63,10 +63,9 @@
   #movies-container {
     .movies-content-container {
       width: 80%;
-
       .movies-content-onw,
       .movies-content-two {
-        height: 500px;
+        width: 50%;
       }
     }
   }
