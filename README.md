@@ -6,7 +6,7 @@ Bem-vindo ao Mundo de Hogwarts, um site dedicado a explorar o universo mágico d
 
 ## Recursos
 
-- Integração de API: Aproveitando o poder de APIs externas como [hp-api.onrender.com]e [potterdb.com] para obter dados sobre personagens, casas, feitiços e muito mais.
+- Integração de API: Aproveitando o poder de APIs externas como (hp-api.onrender.com) e (potterdb.com) para obter dados sobre personagens, casas, feitiços e muito mais.
 
 - Design Interativo: Utiliza o framework React.js junto com Next.js para transições de página perfeitas e carregamento dinâmico de conteúdo.
 
@@ -47,4 +47,4 @@ O Mundo de Hogwarts foi criado por Vitor Cesar Kravszenko. Para dúvidas, você 
 
 ## Agradecimentos
 
-Um agradecimento especial aos criadores de [hp-api.onrender.com] e [potterdb.com] por fornecerem acesso a dados valiosos relacionados a Harry Potter.
+Um agradecimento especial aos criadores de (hp-api.onrender.com) e (potterdb.com) por fornecerem acesso a dados valiosos relacionados a Harry Potter.
