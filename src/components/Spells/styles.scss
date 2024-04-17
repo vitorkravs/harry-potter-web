@@ -1,0 +1,60 @@
+#spells-container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-two);
+  color: white;
+  max-width: 700px;
+  margin: 3rem auto 0 auto;
+  border-radius: 2rem;
+  padding: 1rem;
+
+  .spell-title {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      width: 300px;
+      font-size: 2rem;
+      font-weight: 900;
+    }
+  }
+
+  .input-search-spell {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    input {
+      padding: 1rem;
+      text-align: center;
+      width: 280px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 2rem;
+      background-color: var(--color-three);
+      color: white;
+      cursor: pointer;
+    }
+
+    input::placeholder {
+      color: white;
+    }
+  }
+
+  .spell-list {
+    .spell-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}
