@@ -93,6 +93,7 @@ const Potions = () => {
               background: "rgba(255, 255, 255, 0.5)",
               padding: ".5rem 1rem",
               borderRadius: "1.5rem",
+              marginTop: "2rem",
             }}
           >
             <p>Poção não encontrada :(</p>
