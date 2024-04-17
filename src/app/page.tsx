@@ -1,4 +1,5 @@
 import Characters from "@/components/Characters/Characters";
+import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import Movies from "@/components/Movies/Movies";
 import Potions from "@/components/Potions/Potions";
@@ -16,6 +17,7 @@ export default function Home() {
         <Potions />
         <Spells />
       </main>
+      <Footer />
     </>
   );
 }
