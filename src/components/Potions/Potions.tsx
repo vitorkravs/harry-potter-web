@@ -50,8 +50,7 @@ const Potions = () => {
 
   const firstFilteredPotion =
     filteredPotions.length > 0 ? filteredPotions[0] : null;
-
-  console.log(filteredPotions, firstFilteredPotion);
+    
   return (
     <section id="potions-container">
       <div className="potions-title">
