@@ -6,6 +6,9 @@ import "./styles.scss";
 //hooks
 import { useState } from "react";
 
+//motion
+import { motion } from "framer-motion";
+
 const Movies = () => {
   const [selectedMovie, setSelectedMovie] = useState(""); // Estado para armazenar o filme selecionado
 
@@ -102,11 +105,23 @@ const Movies = () => {
 
   return (
     <section id="movies-container">
-      <div className="movies-title">
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: 100 }}
+        transition={{ duration: 0.5 }}
+        className="movies-title"
+      >
         <h2>Filmes</h2>
-      </div>
+      </motion.div>
       <div className="movies-content-container">
-        <div className="movies-content-one">
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: 100 }}
+          transition={{ duration: 0.5 }}
+          className="movies-content-one"
+        >
           <picture>
             <img
               src="/harry-capa-filmes.jpg"
@@ -115,14 +130,19 @@ const Movies = () => {
               height="100%"
             />
           </picture>
-        </div>
-        <div className="movies-content-two">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: 100 }}
+          transition={{ duration: 1 }}
+          className="movies-content-two"
+        >
           <h3>Escolha um filme:</h3>
           <select
             value={selectedMovie}
             onChange={(e) => handleMovieSelect(e.target.value)}
             style={{ background: `var("--color-one")` }}
-            className="teste"
           >
             <option value="">Selecione um filme</option>
             <option value="Harry Potter e a Pedra Filosofal">
@@ -151,7 +171,7 @@ const Movies = () => {
             </option>
           </select>
           {renderMovieDescription()}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

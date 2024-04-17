@@ -9,6 +9,9 @@ import axios from "axios";
 //hooks
 import { useEffect, useState } from "react";
 
+//motion
+import { motion } from "framer-motion";
+
 interface Spells {
   data: [];
 
@@ -50,7 +53,13 @@ const Spells = () => {
     filteredSpells.length > 0 ? filteredSpells[0] : null;
 
   return (
-    <section id="spells-container">
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.8 }}
+      id="spells-container"
+    >
       <div className="spell-title">
         <h2>Feitiços</h2>
       </div>
@@ -99,7 +108,7 @@ const Spells = () => {
           </div>
         )}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

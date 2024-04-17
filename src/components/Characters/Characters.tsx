@@ -9,6 +9,9 @@ import axios from "axios";
 //hooks
 import { useEffect, useState } from "react";
 
+//motion
+import { motion } from "framer-motion";
+
 interface Character {
   name: string;
   image: string;
@@ -58,7 +61,13 @@ const Characters = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="characters-title">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+        className="characters-title"
+      >
         <h2>Personagens</h2>
         <p>Aqui você pode pesquisar sobre os personagens queridos de HP</p>
         <p>
@@ -66,16 +75,28 @@ const Characters = () => {
           é da api que utilizei para esse site.
         </p>
         <p>Já estou procurando uma api mais completa</p>
-      </div>
-      <div className="input-search-character">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.55 }}
+        className="input-search-character"
+      >
         <input
           type="text"
           placeholder="Digite o nome do personagem aqui"
           value={searchTerm}
           onChange={handleSearchTermChange}
         />
-      </div>
-      <div className="character-list">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.6 }}
+        className="character-list"
+      >
         {firstFilteredCharacter ? (
           <div className="character-card">
             <h3>{firstFilteredCharacter.name}</h3>
@@ -129,7 +150,7 @@ const Characters = () => {
             <p>Personagem não encontado :{"("}</p>
           </div>
         )}
-      </div>
+      </motion.div>
     </section>
   );
 };

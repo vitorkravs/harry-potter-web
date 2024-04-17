@@ -13,6 +13,9 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Image from "next/image";
 
+//motion
+import { motion } from "framer-motion";
+
 const Welcome = () => {
   return (
     <section id="welcome-container">
@@ -22,7 +25,13 @@ const Welcome = () => {
           backgroundImage: `url("/harry-potter-books-na-janela.jpg")`,
         }}
       ></div>
-      <div id="title-welcome-container">
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+        id="title-welcome-container"
+      >
         <div id="title-welcome">
           <h1>Bem vindo ao Mundo Mágico de Harry Potter</h1>
           <p>
@@ -30,8 +39,14 @@ const Welcome = () => {
             de Hogwarts e além...
           </p>
         </div>
-      </div>
-      <div id="books-container">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+        id="books-container"
+      >
         <h2>Vamos começar pelos livros</h2>
         <Swiper
           slidesPerView={1}
@@ -129,7 +144,7 @@ const Welcome = () => {
             </div>
           </SwiperSlide>
         </Swiper>
-      </div>
+      </motion.div>
     </section>
   );
 };
