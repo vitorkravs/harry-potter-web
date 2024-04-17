@@ -98,7 +98,9 @@ const HeaderNavigation = ({ openMenu, toggleMenu }: HeaderNavigationProps) => {
             </li>
             <li>
               <GrMagic className="icon" />
-              <a href="">Feitiços</a>
+              <a href="#spells-container" onClick={toggleMenu}>
+                Feitiços
+              </a>
             </li>
           </ul>
         </motion.nav>
