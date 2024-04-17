@@ -1,0 +1,47 @@
+#scroll-to-top-button {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 2rem;
+  right: 1rem;
+  background: var(--color-one);
+  color: white;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  z-index: 50;
+  border: 1px solid white;
+  animation: toggleScale infinite 2s;
+
+  .footer-icon {
+    font-size: 2rem;
+  }
+}
+
+@keyframes toggleScale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 768px) {
+  #scroll-to-top-button {
+    width: 4rem;
+    height: 4rem;
+    bottom: 3rem;
+    right: 2rem;
+  }
+
+  #scroll-to-top-button:hover {
+    cursor: pointer;
+  }
+}
